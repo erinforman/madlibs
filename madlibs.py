@@ -44,7 +44,7 @@ def greet_person():
 @app.route('/game')
 def show_madlib_form():
     """Show madlib form to user."""
-    player = request.args.get("person")
+    # player = request.args.get("person")
     play_game_y_n = request.args.get("yesno")
 
     if play_game_y_n == "Yes":
